@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+@keyframes change-background {
+  0% {
+    background-color: #12c2e9;
+  }
+  25% {
+    background-color: #c471ed;
+  }
+  50% {
+    background-color: #dd0d7f;
+  }
+  75% {
+    background-color: #c471ed;
+  }
+  100% {
+    background-color: #12c2e9;
+  }
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  /* animation: change-background 10s infinite ease-in-out; */
+}
+.person-name {
+  background-color: #c600f8;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 40px;
+  color: aliceblue;
+  font-size: 30px;
+}
+input {
+  height: 35px;
+  border: none;
+  font-size: 25px;
+  padding-left: 10px;
+  color: #df0edf;
+}
+input:focus {
+  outline: none;
+}
+.success,
+.wrap {
+  background-color: #f80091;
+  color: aliceblue;
+  font-size: 30px;
+  padding: 40px;
+}
+.wrap-btn {
+  margin-top: 20px;
+}
+.no,
+.yes {
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: 20px;
+  margin: 0px 10px;
+}
+.no {
+  background-color: #c2024b;
+}
+.yes {
+  background-color: #12c2e9;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+/* JS Event */
+.none {
+  display: none;
+}
